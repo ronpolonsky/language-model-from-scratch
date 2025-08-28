@@ -9,8 +9,8 @@ from my_code.checkpointing import load_checkpoint
 
 
 CKPT_PATH   = "saved_checkpoints/tinystories_cpu/ckpt_final_step_0005000.pt"
-VOCAB_PATH  = "outputs/tokenizers/tinystories-10k/vocab.tsv"
-MERGES_PATH = "outputs/tokenizers/tinystories-10k/merges.txt"
+VOCAB_PATH  = "trained_tokenizer/vocab.tsv"
+MERGES_PATH = "trained_tokenizer/merges.txt"
 
 
 def main():
