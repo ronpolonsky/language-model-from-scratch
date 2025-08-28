@@ -1,0 +1,1 @@
+saved_checkpoints/tinystories_cpu/ckpt_final_step_0005000.pt filter=lfs diff=lfs merge=lfs -text
