@@ -1,3 +1,8 @@
+from my_code.tokenizer import Tokenizer
+from my_code.transformer_model import TransformerLM
+from my_code.generate_tokens import generate_tkns
+from my_code.checkpointing import load_checkpoint
+
 def inference_from_input(user_text: str) -> str:
     # same defaults as before
     tokenizer = Tokenizer.from_files(VOCAB_PATH, MERGES_PATH, special_tokens=["<|endoftext|>"])
