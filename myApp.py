@@ -1,7 +1,22 @@
+import subprocess
+import sys
+
+# --- Auto-install dependencies if missing ---
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+for pkg in ["torch", "gradio"]:
+    try:
+        __import__(pkg)
+    except ImportError:
+        install(pkg)
+
+# import everything after ensuring dependencies
 import gradio as gr
 from my_code.inference_user_prompt import generate_from_user_input
 
-# Wrapper so Gradio calls my existing inference function
+
+# Wrapper function so Gradio can call my inference code
 def gradio_generate(prompt, max_new_tokens=50, temperature=1.0):
     return generate_from_user_input(
         prompt=prompt,
@@ -9,6 +24,8 @@ def gradio_generate(prompt, max_new_tokens=50, temperature=1.0):
         temperature=float(temperature),
     )
 
+
+# Build the UI
 demo = gr.Interface(
     fn=gradio_generate,
     inputs=[
@@ -20,6 +37,7 @@ demo = gr.Interface(
     title="TinyStories Transformer",
     description="Enter a prompt and generate continuation with the trained TinyStories model."
 )
+
 
 if __name__ == "__main__":
     demo.launch()
