@@ -1,5 +1,5 @@
 import streamlit as st
-from inference_from_user_prompt import inference_from_input
+from my_code.inference_from_user_prompt import inference_from_input
 
 st.title("Transformer Language Model Demo")
 
