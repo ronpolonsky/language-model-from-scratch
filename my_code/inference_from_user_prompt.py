@@ -3,6 +3,11 @@ from my_code.transformer_model import TransformerLM
 from my_code.generate_tokens import generate_tkns
 from my_code.checkpointing import load_checkpoint
 
+
+CKPT_PATH   = "saved_checkpoints/tinystories_cpu/ckpt_final_step_0005000.pt"
+VOCAB_PATH  = "trained_tokenizer/vocab.tsv"
+MERGES_PATH = "trained_tokenizer/merges.txt"
+
 def inference_from_input(user_text: str) -> str:
     # same defaults as before
     tokenizer = Tokenizer.from_files(VOCAB_PATH, MERGES_PATH, special_tokens=["<|endoftext|>"])
