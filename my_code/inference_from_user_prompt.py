@@ -8,7 +8,7 @@ from my_code.generate_tokens import generate_tkns
 from my_code.checkpointing import load_checkpoint
 
 
-CKPT_PATH   = "saved_checkpoints/tinystories_cpu/ckpt_final_step_0005000.pt"
+CKPT_PATH   = "saved_checkpoints/ckpt_final_step_0005000.pt"
 VOCAB_PATH  = "trained_tokenizer/vocab.tsv"
 MERGES_PATH = "trained_tokenizer/merges.txt"
 
