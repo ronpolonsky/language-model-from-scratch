@@ -1,16 +1,14 @@
-from my_code.inference_from_user_prompt import inference_from_input
-import gradio as gr
+import streamlit as st
+from inference_from_user_prompt import inference_from_input
 
-def generate_text(user_input):
-    return inference_from_input(user_input)
+st.title("Transformer Language Model Demo")
 
-demo = gr.Interface(
-    fn=generate_text,
-    inputs=gr.Textbox(label="Enter a prompt"),
-    outputs=gr.Textbox(label="Generated text"),
-    title="Language Model Demo",
-)
+user_text = st.text_input("Enter your prompt:", "")
 
-if __name__ == "__main__":
-    demo.launch(share=True)
-
+if st.button("Generate"):
+    if not user_text.strip():
+        st.warning("Please enter a prompt first.")
+    else:
+        output = inference_from_input(user_text)
+        st.subheader("Generated text:")
+        st.write(output)
