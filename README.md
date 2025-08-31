@@ -17,7 +17,7 @@ https://colab.research.google.com/github/ronpolonsky/language-model-from-scratch
 **Run Locally** _(Use python3 on mac/linux or py on Windows if needed)_ -> takes time to install lfs..
 
 ```bash
-% git clone https://github.com/ronpolonsky/language-model-from-scratch.git
+git clone https://github.com/ronpolonsky/language-model-from-scratch.git
 cd language-model-from-scratch
 git lfs install
 git lfs pull
