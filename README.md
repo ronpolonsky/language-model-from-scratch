@@ -5,15 +5,16 @@ I implemented the byte-level BPE tokenizer, AdamW optimizer, and the Transformer
 
 Both the tokenizer and the model are trained on TinyStories downloaded from Hugging Face: https://huggingface.co/datasets/roneneldan/TinyStories
 
-**To Run the Demo**
-Run in Google Colab (no installs)
+## To Run the Demo
+
+**Run in Google Colab (no installs)**
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](
 https://colab.research.google.com/github/ronpolonsky/language-model-from-scratch/blob/main/interactive_app/myApp.ipynb)
 
 ---
 
-## Run Locally 
+**Run Locally **
 
 ```bash
 git clone https://github.com/ronpolonsky/language-model-from-scratch.git
