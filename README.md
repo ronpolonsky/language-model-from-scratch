@@ -1,7 +1,7 @@
 # language-model-from-scratch
 This repo implements a small GPT-style language model trained on TinyStories (Eldan & Li, 2023), end-to-end from scratch, with ~20M Parameters and ~40M tokens processed.
 
-I implemented the byte-level BPE tokenizer, AdamW optimizer, and the Transformer with Multi-Head Self-Attention, Pre-Norm blocks, RoPE and Scheduler without using PyTorch's built in modules (no nn.MultiheadAttention, no torch.optim.AdamW, no schedulers, no external tokenizers) - only using basic tensor operatins and inheritance from nn.Module.
+I implemented the byte-level BPE tokenizer, AdamW optimizer, and the Transformer with Multi-Head Self-Attention, Pre-Norm blocks, RoPE and Scheduler without using PyTorch's built in modules (no nn.MultiheadAttention, no torch.optim.AdamW, no external tokenizers) - only using basic tensor operatins and inheritance from nn.Module.
 
 Both the tokenizer and the model are trained on TinyStories downloaded from Hugging Face: https://huggingface.co/datasets/roneneldan/TinyStories
 
