@@ -21,5 +21,5 @@ git clone https://github.com/ronpolonsky/language-model-from-scratch.git
 cd language-model-from-scratch
 git lfs install
 git lfs pull
-pip install -r requirements.txt
-streamlit run myApp.py
+pip install -r interactive_app/requirements.txt
+streamlit run interactive_app/myApp.py
