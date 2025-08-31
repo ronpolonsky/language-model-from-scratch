@@ -7,7 +7,7 @@ Both the tokenizer and the model are trained on TinyStories downloaded from Hugg
 
 ## To Run the Demo:
 
-**In Google Colab with UI cell**
+**In Google Colab with UI cell** (no instls)
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](
 https://colab.research.google.com/github/ronpolonsky/language-model-from-scratch/blob/main/interactive_app/myApp_colab.ipynb)
