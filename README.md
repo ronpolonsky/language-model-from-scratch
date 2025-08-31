@@ -8,7 +8,7 @@ Both the tokenizer and the model are trained on TinyStories downloaded from Hugg
 
 ##To Run the Demo
 
-Clone the repo and start the interactive app:
+Clone the repo and start the interactive app (_requires git lfs_)
 
 ```bash
 git clone https://github.com/ronpolonsky/language-model-from-scratch.git
