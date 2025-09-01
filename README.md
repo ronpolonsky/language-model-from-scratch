@@ -19,7 +19,7 @@ https://colab.research.google.com/github/ronpolonsky/language-model-from-scratch
 ```bash
 git clone https://github.com/ronpolonsky/language-model-from-scratch.git
 cd language-model-from-scratch
-git lfs install
-git lfs pull
+git lfs install && git lfs pull
 pip install -r interactive_app/requirements.txt
-streamlit run interactive_app/myApp.py
+PYTHONPATH=. streamlit run interactive_app/myApp.py
+
